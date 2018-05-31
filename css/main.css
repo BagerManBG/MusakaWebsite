@@ -1,3 +1,159 @@
+/* Header */
 .jumbotron {
     margin: 0;
+}
+
+.navbar-inner {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.header-heading--text {
+	font-family: "Monotype Corsiva";
+	font-size: 4em;
+}
+
+.header-logo--image {
+	border-radius: 15px;
+}
+
+.input-group {
+	border-radius: .25rem;
+	overflow: hidden;
+}
+
+.input-group input,
+.input-group button {
+	border-radius: 0;
+}
+
+.nav-search {
+	display: flex;
+}
+
+.navbar a {
+	font-variant: small-caps;
+	font-size: 1.4em;
+}
+
+.navbar .navbar-nav a {
+	font-size: 1.2em;
+}
+/* END Header */
+
+/* Aside Content */
+.content-container {
+	margin: 0 .6rem;
+}
+
+.card {
+	margin-top: 30px;
+}
+
+.card .card-header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #ffc107;
+}
+
+.card .card-body {
+	background-color: #e9ecef;
+}
+
+.card .card-body ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.card .card-body ul li a {
+	background-color: #f3f4f5;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #ffc107;
+	transition: .5s;
+	margin-top: 5px;
+	color: #212529;
+	font-size: 1.3em;
+	border-radius: 5px;
+	font-variant: small-caps;
+	font-family: sans-serif;
+}
+
+.card .card-body ul li a:hover {
+	border: 1px solid #212529;
+	background-color: #ffc107;
+	color: #fff;
+	text-shadow: 2px 2px 5px #212529;
+}
+
+.card .card-body img {
+	border-radius: 5px;
+}
+
+.card .card-body p {
+	font-size: 1.2em;
+}
+
+.card .card-body .best-submitted {
+	margin: 0;
+	margin-top: 10px;
+	color: #212529;
+	text-align: center;
+}
+
+.card .card-body .form-login label {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.card .card-body .form-login label:first-of-type {
+	margin-top: 0;
+}
+
+.card .card-body .form-login a {
+	margin-top: 10px;
+}
+
+.card .card-body .form-btn {
+	margin-top: 20px;
+}
+/* END Aside Content */
+
+@media screen and (max-width: 992px) {
+	.header-heading--text {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav .nav-item {
+		margin-right: 15px;
+	}
+
+	.nav-search {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header-heading {
+		justify-content: center;
+		margin-top: 30px; 
+	}
+
+	.header-heading--text {
+		font-size: 2.6em;
+	}
+
+	.header-logo {
+		justify-content: center;
+	}
+
+	.navbar-nav {
+		border-top: 1px solid #fff;
+		margin-top: 10px;
+	}
 }
