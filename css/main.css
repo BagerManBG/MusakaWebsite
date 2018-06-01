@@ -146,16 +146,23 @@
 	z-index: 9000;
 	position: fixed;
 	display: flex;
+	transition: .3s ease;
 	justify-content: center;
 	align-items: center;
 	bottom: 10px;
 	right: 10px;
 	width: 50px;
 	height: 50px;
+	cursor: pointer;
 	border-radius: 50%;
 	background-color: #797979;
-	box-shadow: 0px 0px 2px 0px #888;
+	box-shadow: 0 0 2px #888;
 	opacity: .96;
+}
+
+.up-arrow:hover {
+	background-color: #696969;
+	box-shadow: 0 0 2px #999;
 }
 
 .up-arrow img {
@@ -166,7 +173,7 @@
 }
 /* END Fixed Up Arrow */
 
-/* Lead Page Content */
+/* Main Content */
 .article--title {
 	text-align: center;
 	margin-bottom: 30px;
@@ -174,29 +181,88 @@
 	text-shadow: 2px 2px 5px #939393;
 }
 
+.section--title {
+	font-family: sans-serif;
+}
+
 .article--head-image {
 	max-width: 260px;
 	width: 100%;
-	padding-right: 20px;
 	margin-top: 10px;
 	float: left;
+}
+
+.article--head-image.f-left {
+	float: left;
+	padding-right: 20px;
+}
+
+.article--head-image.f-right {
+	float: right;
+	padding-left: 20px;
 }
 
 .card .card-body p.article--text {
 	font-size: 1em;
 	text-align: justify;
+	font-family: sans-serif;
 }
-/* END Lead Page Content */
+
+.card .card-body ul.article--list {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+.article--list li {
+	font-family: sans-serif;
+	margin-top: 10px;
+}
+/* END Main Content */
+
+/* Gallery */
+.gallery--body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery--item {
+	width: 33.3333%;
+	box-sizing: border-box;
+	padding: 0 .75rem;
+	margin-top: 20px;
+	display: flex;
+	align-content: center;
+}
+
+.gallery--item img {
+	width: 100%;
+	box-shadow: 0 0 4px #000;
+}
+/* END Gallery*/
 
 @media screen and (max-width: 1200px) {
 	.after-comma:after {
 		content: '';
+	}
+
+	.gallery--item {
+		width: 50%;
 	}
 }
 
 @media screen and (max-width: 992px) {
 	.header-heading--text {
 		font-size: 3em;
+	}
+
+	.gallery--item {
+		width: 33.3333%;
+	}
+
+	.section--title,
+	.img-fluid {
+		text-align: center;
 	}
 }
 
@@ -211,6 +277,10 @@
 
 	.article--title {
 		font-size: 2em;
+	}
+
+	.gallery--item {
+		width: 50%;
 	}
 }
 
@@ -243,5 +313,13 @@
 		padding: 0;
 		float: none;
 		margin-bottom: 20px;
+	}
+
+	.gallery--item {
+		width: 100%;
+	}
+
+	.article--list li {
+		margin-top: 15px;
 	}
 }
