@@ -1,0 +1,140 @@
+/* This CSS file is for GLOBAL classes. */
+.max-width-100 {
+	max-width: 100% !important;
+}
+
+.width-100 {
+	width: 100% !important;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.input-group {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.input-group input,
+.input-group button {
+	border-radius: 0;
+}
+
+.input-group input {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.input-element {
+	flex-grow: 1;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	display: block;
+}
+
+.input-group .input-element {
+	width: 1%;
+}
+
+.btn {
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: #ffc107;
+	border: 1px solid #ffc107;
+	color: #212529;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+}
+
+.bg-light {
+	background-color: #f8f9fa;
+}
+
+.bg-dark {
+    background-color: #343a40;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.img-fluid {
+	max-width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex !important;
+}
+
+@media screen and (min-width: 576px) {
+	.d-sm-flex {
+		display: flex !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.d-md-block {
+		display: block !important;
+	}
+
+	.d-md-flex {
+		display: flex !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.d-lg-none {
+		display: none !important;
+	}
+
+	.d-lg-block {
+		display: block !important;
+	}
+
+	.d-lg-inline {
+		display: inline !important;
+	}
+
+	.d-lg-flex {
+		display: flex !important;
+	}
+}
