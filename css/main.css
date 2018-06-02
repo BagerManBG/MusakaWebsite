@@ -163,7 +163,7 @@
 .card .card-body .form-login label {
 	display: block;
 	padding-top: 10px;
-	padding-bottom: 3px;
+	padding-bottom: 5px;
 	font-size: 1em;
 	font-weight: bold;
 }
@@ -290,6 +290,13 @@
 .article--list li {
 	font-family: sans-serif;
 	margin-top: 10px;
+}
+
+.section--title {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 5px 0 10px 0;
+	font-family: serif;
 }
 /* END Inner Main Content */
 

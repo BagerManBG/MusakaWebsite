@@ -7,58 +7,52 @@
         <title>Musaka Wiki</title>
 
         <link rel="icon" href="media/favicon.ico" type="image/x-icon"/>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
         <div class="main-content">
             <header class="header-container">
-                <div class="row jumbotron">
+                <div class="row header">
                     <div class="col-xl-1 col-md-2 col-sm-3 col d-flex align-items-center header-logo">
-                        <img src="media/moussaka-logo.jpg" alt="Potato Logo" class="header-logo--image mw-100">
+                        <img src="media/moussaka-logo.jpg" alt="Potato Logo" class="header-logo--image max-width-100">
                     </div>
                     <div class="col-xl-7 col-md-6 col-sm-9 d-none d-flex align-items-center header-heading">
                         <h1 class="header-heading--text">Moussaka Wiki</h1>
                     </div>
                     <div class="col-md-4 align-items-center d-none d-md-flex">
                         <div class="input-group bg-light">
-                            <input type="text" class="form-control" placeholder="Search here...">
+                            <input type="text" class="input-element" placeholder="Search here...">
                             <button type="button" class="btn btn-warning">Search</button>
                         </div>
                     </div>
                 </div> 
             </header>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-                <div class="navbar-inner row w-100 d-block flex-row d-sm-flex">
+            <nav class="navbar bg-dark">
+                <div class="navbar-inner width-100 d-block d-sm-flex">
                     <a class="navbar-brand" href="index.html">Home</a>
 
-                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav d-flex flex-row">
-                            <li class="nav-item">
-                                <a class="nav-link" href="history.html">History</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="recipie.html">Recipie</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipie.html">Recipie</a>
+                        </li>
+                    </ul>
 
                     <div class="nav-search align-items-center">
                         <div class="input-group bg-light">
-                            <input type="text" class="form-control" placeholder="Search here...">
+                            <input type="text" class="input-element" placeholder="Search here...">
                             <button type="button" class="btn btn-warning">Search</button>
                         </div>
                     </div>
@@ -69,7 +63,7 @@
                     <div class="card">
                         <div class="card-header">Site Map</div>
                         <div class="card-body">
-                            <ul class="d-flex flex-column">
+                            <ul class="d-flex flex-column site-map">
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html">home</a>
                                 </li>
@@ -88,8 +82,8 @@
                     <div class="card">
                         <div class="card-header">Moussaka of The Day</div>
                         <div class="card-body">
-                            <img src="media/moussaka-of-the-day.jpg" class="mw-100">
-                            <p class="best-submitted">Submitted by: <span id="best-submitted-by--value">Baba Sofka</span></p>
+                            <img src="media/moussaka-of-the-day.jpg" alt="moussaka-of-the-day" class="max-width-100">
+                            <p class="best-submitted">Submitted by: <span>Baba Sofka</span></p>
                         </div>
                     </div>
                 </aside>
@@ -99,59 +93,34 @@
                         <article class="card-body article">
                             <h2 class="article--title">History of Moussaka</h2>
                             <hr>
-                            <section>
-                                <img src="media/moussaka-article-main-image.jpg" class="article--head-image f-left">
+                            <div>
+                                <img src="media/moussaka-article-main-image.jpg" alt="moussaka-article-main-image-left" class="article--head-image f-left">
                                 <p class="article--text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque interdum eleifend. Quisque quis consectetur ex. Mauris ut neque ut arcu malesuada rhoncus. Praesent placerat nec elit eget lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent tristique quam ut metus consectetur, id finibus nisl auctor. Integer convallis, diam nec porttitor molestie, lacus est finibus ligula, in efficitur lacus dui non est. Quisque et dolor tristique, auctor magna id, vulputate odio. Vivamus molestie vestibulum libero, non tincidunt diam ornare eget. Morbi id bibendum velit. Nulla porta enim id ligula vulputate, et vehicula enim porta.
                                 </p>
-                            </section>
+                            </div>
                             <hr>
-                            <section>
-                                <img src="media/moussaka-article-main-image.jpg" class="article--head-image f-right">
+                            <div>
+                                <img src="media/moussaka-article-main-image.jpg" alt="moussaka-article-main-image-right" class="article--head-image f-right">
                                 <p class="article--text">
                                     In vel nunc facilisis arcu mollis porta. Maecenas molestie orci lorem, eget tempus nibh rhoncus in. Praesent tincidunt ultrices diam ac mollis. Sed fermentum velit mauris, eu fringilla nunc euismod a. Quisque dictum scelerisque interdum. Mauris tincidunt nec justo id luctus. Mauris condimentum velit leo, eu posuere odio finibus quis. Maecenas interdum, nisl molestie finibus convallis, mauris urna vulputate eros, id dictum risus ligula sed quam. Nunc tincidunt libero at est efficitur, ac varius odio aliquet. Nam tincidunt blandit eros in commodo. Duis ultrices condimentum dui quis lacinia. Nunc eu placerat tortor. 
                                 </p>
-                            </section>
+                            </div>
                             <hr>
-                            <section>
+                            <div>
                                 <p class="article--text">
                                     Fusce fermentum hendrerit enim, non bibendum eros posuere id. Suspendisse luctus ante dui, eu luctus justo bibendum sed. Vivamus sit amet ante interdum, volutpat metus a, maximus felis. Pellentesque erat ante, venenatis vel nisl vel, fermentum viverra ipsum. Curabitur velit turpis, auctor non ligula sagittis, commodo pulvinar sem. Praesent at dolor urna. Praesent eu ultricies felis, vitae maximus quam. Pellentesque quis mi risus. Nam pretium finibus euismod. Duis euismod fringilla elit, nec faucibus ex venenatis a. Proin metus tortor, placerat et molestie eu, sagittis consectetur nisi. Suspendisse at aliquam turpis. Duis sodales et urna non cursus. 
                                 </p>
-                            </section>
+                            </div>
                         </article>
                     </div>
                 </main>
                 <!-- END MAIN CONTENT -->
                 <aside class="col-lg-3">
                     <div class="card">
-                        <div class="card-header">Gallery Teaser</div>
-                        <div class="card-body">
-                            <div id="demo" class="carousel slide" data-ride="carousel">
-                                <ul class="carousel-indicators">
-                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                    <li data-target="#demo" data-slide-to="1"></li>
-                                    <li data-target="#demo" data-slide-to="2"></li>
-                                </ul>
-
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="media/gallery-teaser-item-1.jpg" class="w-100" alt="Moussaka">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="media/gallery-teaser-item-2.jpg" class="w-100" alt="Moussaka">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="media/gallery-teaser-item-3.jpg" class="w-100" alt="Moussaka">
-                                    </div>
-                                </div>
-
-                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" href="#demo" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
-                            </div>
+                        <div class="card-header">Random Moussaka</div>
+                        <div class="card-body d-flex align-items-center">
+                            <img src="media/random-moussaka.jpg" alt="random-moussaka" class="img-fluid">
                         </div>
                     </div>
                     <div class="card">
@@ -159,13 +128,13 @@
                         <div class="card-body">
                             <div class="form-login" id="login-form">
                                 <label for="login-username">Username:</label>
-                                <input type="text" id="login-username" class="form-control" placeholder="Username...">
+                                <input type="text" id="login-username" class="input-element" placeholder="Username...">
 
-                                <label for="login-username">Password:</label>
-                                <input type="password" id="login-username" class="form-control" placeholder="Password...">
+                                <label for="login-password">Password:</label>
+                                <input type="password" id="login-password" class="input-element" placeholder="Password...">
 
                                 <div class="input-group">
-                                    <button type="button" class="btn btn-warning form-btn w-100">Login</button>
+                                    <button type="button" class="btn form-btn width-100">Login</button>
                                 </div>
 
                                 <div class="d-flex justify-content-center">
@@ -182,7 +151,7 @@
                         <div class="card-body">
                             <p>Subscribe to our newsletter:</p>
                             <div class="input-group bg-light">
-                                <input type="text" class="form-control" placeholder="Your E-mail...">
+                                <input type="text" class="input-element" placeholder="Your E-mail...">
                                 <button type="button" class="btn btn-warning">Send</button>
                             </div>
                         </div>
@@ -191,14 +160,14 @@
                         <div class="card">
                             <div class="card-header">Moussaka of The Day</div>
                             <div class="card-body">
-                                <img src="media/moussaka-of-the-day.jpg" class="mw-100">
-                                <p class="best-submitted">Submitted by: <span id="best-submitted-by--value">Baba Sofka</span></p>
+                                <img src="media/moussaka-of-the-day.jpg" alt="moussaka-of-the-day-2" class="max-width-100">
+                                <p class="best-submitted">Submitted by: <span>Baba Sofka</span></p>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header">Site Map</div>
                             <div class="card-body">
-                                <ul class="d-flex flex-column">
+                                <ul class="d-flex flex-column site-map">
                                     <li class="nav-item">
                                         <a class="nav-link" href="index.html">home</a>
                                     </li>
@@ -217,21 +186,21 @@
                     </div>
                 </aside>
             </div>
-            <footer class="footer-container container-fluid bg-dark row mt-4">
+            <footer class="footer-container container-fluid bg-dark row">
                 <div class="col-md-1 d-none d-md-block"></div>
                 <div class="col d-block d-lg-flex align-items-center justify-content-center">
-                    <p class="d-block d-lg-inline pr-md-2 after-comma">Website created by MoussakaSoft<sup>&copy;</sup></p>
+                    <p class="d-block d-lg-inline after-comma">Website created by MoussakaSoft<sup>&copy;</sup></p>
                     <p class="d-block d-lg-inline">All rights reserved! (2018)</p>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                     <p>Contact Us: +359 12 34 56, office@moussakasoft.net</p>
                 </div>
                 <div class="col-md-1 d-none d-md-block"></div>
-            </div>
+            </footer>
         </div>
 
         <div class="up-arrow">
-            <img src="media/arrow.png">
+            <img src="media/arrow.png" alt="up-arrow">
         </div>
     </body>
 </html>
