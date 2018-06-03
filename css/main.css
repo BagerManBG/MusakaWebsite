@@ -248,6 +248,10 @@
 /* END Fixed Up Arrow */
 
 /* Inner Main Content */
+.article {
+	padding-bottom: 20px !important;
+}
+
 .article--title {
 	text-align: center;
 	margin: 20px 0 30px;
