@@ -344,6 +344,10 @@
 	border-radius: 0;
 }
 
+.registration-form--container#registration-form {
+	display: none;
+}
+
 .registration-form--container .background-mask {
 	position: absolute;
 	top: 0;

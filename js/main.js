@@ -52,7 +52,22 @@ const scrollUp = () => {
 	});
 }
 
+const registration = () => {
+	const regForm = $('#registration-form');
+	const openBtn = $('#open-reg-form');
+
+	openBtn.click(function (e) {
+		e.preventDefault();
+
+		regForm.css({'display': 'flex', 'opacity': 0});
+		regForm.animate({'opacity': 1}, 400, () => {
+			regForm.addClass('d-md-flex').removeAttr('style');
+		})
+	})
+}
+
 window.onload = () => {
 	searchBar();
 	scrollUp();
+	registration();
 }
