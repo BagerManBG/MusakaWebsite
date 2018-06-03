@@ -217,7 +217,7 @@
 
 /* Fixed Up Arrow */
 .up-arrow {
-	z-index: 9000;
+	z-index: 1000;
 	position: fixed;
 	display: flex;
 	transition: .3s ease;
@@ -325,6 +325,102 @@
 	box-shadow: 0 0 4px #000;
 }
 /* END Gallery*/
+
+/* Registration Form */
+.registration-form--container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1500;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+}
+
+.registration-form--container .background-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #212529;
+	opacity: .69;
+	z-index: 1502;
+}
+
+.registration-form--inner {
+	border-radius: 10px;
+	z-index: 1600;
+	max-height: 100%;
+	margin: 20% 0;
+	position: relative;
+}
+
+.registration-form--title {
+	text-align: center;
+	font-size: 2em;
+	font-family: Tahoma;
+}
+
+.registration-form--inner .field-group > label {
+	display: block;
+	padding-bottom: 5px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.registration-form--inner .input-group {
+	justify-content: space-between;
+}
+
+.registration-form--inner .input-group > label {
+	flex-grow: 3;
+	align-self: center;
+}
+
+.registration-form--inner .input-group input {
+	margin-left: 15px;
+	padding: 5px 10px;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	transition: .3s ease;
+	flex-grow: 1;
+}
+
+.registration-form--inner .input-group input.success {
+	border: 1px solid #2dc448;
+}
+
+.registration-form--inner .input-group input.error {
+	border: 1px solid #f44242;
+}
+
+.registration-form--inner .input-group input:first-of-type {
+	margin-left: 0;
+}
+
+.registration-form--inner .input-group input[type=radio] {
+	width: 10px;
+	margin-bottom: 4px;
+}
+
+.reset-form {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 40px;
+	cursor: pointer;
+}
+/* END Registration Form*/
 
 @media screen and (max-width: 1200px) {
 	.after-comma:after {
